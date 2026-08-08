@@ -257,7 +257,7 @@ const NUMBER_RE  = /\d+(?:[.,]\d+)*\s*(?:%|퍼센트|명|개월|개|주|일|년|
 const PROPER_RE  = /[A-Za-z][A-Za-z0-9+#._-]{1,}/g;
 
 // 점수 기준값 — 감이 안 맞으면 이 숫자들을 조정하세요
-const ABSTRACT_MAX_RATIO = 0.05;  // 전체 단어의 5% 이상이 추상어면 100점
+const ABSTRACT_MAX_RATIO = 0.10;  // 전체 단어의 10% 이상이 추상어면 100점
 const CONCRETE_TARGET    = 4;     // 100단어당 구체 표현 4개면 0점(=사람 티)
 const WEIGHTS = { abstract: 0.40, concrete: 0.35, failure: 0.25 };
 
